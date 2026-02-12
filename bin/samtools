@@ -1,0 +1,2 @@
+#!/bin/bash
+apptainer exec /shared/teams/hpc-groombridgelab/software/hpc_groombridgelab/containers/samtools/samtools_1.23.sif samtools "$@"

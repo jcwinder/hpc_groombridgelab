@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: quay.io/biocontainers/bcftools:1.23--h3a4d415_0
+
+%labels
+    Author johannawinder
+    Version 1.23
+    Description "BCFtools container for lab use"
+
+%environment
+    export LC_ALL=C
+    export LANG=C
+
+%runscript
+    exec bcftools "$@"

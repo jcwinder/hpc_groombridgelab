@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: quay.io/biocontainers/bwa:0.7.19--h577a1d6_1
+
+%labels
+    Author johannawinder
+    Version 0.12.1
+    Description "BWA container for lab use"
+
+%environment
+    export LC_ALL=C
+    export LANG=C
+
+%runscript
+    exec bwa "$@"

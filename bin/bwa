@@ -1,0 +1,2 @@
+#!/bin/bash
+apptainer exec /shared/teams/hpc-groombridgelab/software/hpc_groombridgelab/containers/bwa/bwa_0.7.19.sif bwa "$@"

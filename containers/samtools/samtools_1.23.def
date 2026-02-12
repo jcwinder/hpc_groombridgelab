@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: quay.io/biocontainers/samtools:1.23--h96c455f_0
+
+%labels
+    Author johannawinder
+    Version 0.12.1
+    Description "Samtools container for lab use"
+
+%environment
+    export LC_ALL=C
+    export LANG=C
+
+%runscript
+    exec samtools "$@"

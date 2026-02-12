@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0
+
+%labels
+    Author johannawinder
+    Version 0.12.1
+    Description "FastQC container for lab use"
+
+%environment
+    export LC_ALL=C
+    export LANG=C
+
+%runscript
+    exec fastqc "$@"
